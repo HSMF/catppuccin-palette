@@ -14,6 +14,21 @@ struct App {
 #[derive(Subcommand, Clone, Debug)]
 enum Command {
     Palette {
+        /// the format with which to print each palette entry
+        ///
+        /// Can contain following modifiers
+        ///
+        /// %n      The name of the color
+        ///
+        /// %b      A colored block preview
+        ///
+        /// %r      The RGB representation
+        ///
+        /// %x      The RGB hex code
+        ///
+        /// %h      The HSL representation
+        ///
+        /// %%      A literal %
         #[clap(short = 'F', long)]
         format: Option<String>,
     },
