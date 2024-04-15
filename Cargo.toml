@@ -1,0 +1,12 @@
+[package]
+name = "catppuccin-palette"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+ansi_term = "0.12.1"
+anyhow = "1.0.82"
+catppuccin = { version = "2.2.0", features = ["ansi-term"] }
+clap = { version = "4.5.4", features = ["derive"] }
